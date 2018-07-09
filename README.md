@@ -13,3 +13,13 @@ Ans: Sort the array. Start from leftmost element and add it the last element.
 3. Given the root to a binary tree, implement serialize(root), which serializes the tree into a string, and deserialize(s), which deserializes the string back into the tree.
 
 4. reservoir sampling - https://en.wikipedia.org/wiki/Reservoir_sampling
+ReservoirSample(S[1..n], R[1..k])
+  // fill the reservoir array
+  for i = 1 to k
+      R[i] := S[i]
+
+  // replace elements with gradually decreasing probability
+  for i = k+1 to n
+    j := random(1, i)   // important: inclusive range--generate a number between 1 & for eg., 11 if it is less than equal 10 replace that element with the 11th element.
+    if j <= k
+        R[j] := S[i]
