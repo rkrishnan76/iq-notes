@@ -27,6 +27,12 @@ ReservoirSample(S[1..n], R[1..k])
 5. Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.
 Solution: https://www.geeksforgeeks.org/a-product-array-puzzle/
     while iterating forward,  prod[i] = temp;temp *= arr[i]; while backward, prod[i] *= temp; temp *= arr[i];
+    
+6. Find missing positive integer.
+      1. remove the negative no.s and construct new array.
+      2. In the constructed array, make the no. negative for the location @ arr[i] if it is greater than zero
+      if(Math.abs(arr[i]) - 1 < size && arr[Math.abs(arr[i]) - 1] > 0)
+          arr[Math.abs(arr[i]) - 1] = -arr[Math.abs(arr[i]) - 1];
 
 
 
