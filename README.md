@@ -23,3 +23,7 @@ ReservoirSample(S[1..n], R[1..k])
     j := random(1, i)   // important: inclusive range--generate a number between 1 & for eg., 11 if it is less than equal 10 replace that element with the 11th element.
     if j <= k
         R[j] := S[i]
+
+5. Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.
+
+
