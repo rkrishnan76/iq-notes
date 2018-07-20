@@ -25,5 +25,9 @@ ReservoirSample(S[1..n], R[1..k])
         R[j] := S[i]
 
 5. Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.
+Solution: https://www.geeksforgeeks.org/a-product-array-puzzle/
+    while iterating forward,  prod[i] = temp;temp *= arr[i]; while backward, prod[i] *= temp; temp *= arr[i];
+
+
 
 
