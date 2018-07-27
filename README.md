@@ -42,4 +42,8 @@ Solution: https://www.geeksforgeeks.org/a-product-array-puzzle/
 
 
 
+7. Running Mean.
+      Construct new array and order them as you read from the provided array.  This can be done by comparing with the prior no.s and moving them to the right position.
+
+8. finding all subset of a given set.
 
